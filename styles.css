@@ -1,0 +1,131 @@
+/* beginning of Cyborg bootswatch theme*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --bs-blue: #2a9fd6;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #e83e8c;
+  --bs-red: #c00;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #f80;
+  --bs-green: #77b300;
+  --bs-teal: #20c997;
+  --bs-cyan: #93c;
+  --bs-white: #fff;
+  --bs-gray: #555;
+  --bs-gray-dark: #222;
+  --bs-primary: #2a9fd6;
+  --bs-secondary: #555;
+  --bs-success: #77b300;
+  --bs-info: #93c;
+  --bs-warning: #f80;
+  --bs-danger: #c00;
+  --bs-light: #222;
+  --bs-dark: #adafae;
+  --bs-font-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(45, 45, 45, 1));
+}
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+    background: #000;
+  }
+  
+  
+/* Styling the headings */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+  }
+  
+  /*Font sizes*/
+  h1, .h1 {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+  
+  @media (min-width: 1200px) {
+    h1, .h1 {
+      font-size: 4rem;
+    }
+  }
+  
+  h2, .h2 {
+    font-size: calc(1.425rem + 2.1vw);
+  }
+  
+  @media (min-width: 1200px) {
+    h2, .h2 {
+      font-size: 3rem;
+    }
+  }
+  
+  h3, .h3 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  
+  @media (min-width: 1200px) {
+    h3, .h3 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  h4, .h4 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  
+  @media (min-width: 1200px) {
+    h4, .h4 {
+      font-size: 2rem;
+    }
+  }
+  
+  h5, .h5 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  
+  @media (min-width: 1200px) {
+    h5, .h5 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  h6, .h6 {
+    font-size: 1rem;
+  }
+  
+  /*Anchor tags*/
+  a {
+    color: #2a9fd6;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #227fab;
+  }
+  
+  /* Giving our navbar some padding and a background color */
+  .navbar {
+    padding: 10px;
+    background: #000;
+  }
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    border-radius: 3px;
+  }
+  
+  /* Getting rid of the default link styles here */
+  .navbar li a {
+    color: #fff;
+    text-decoration: none;
+  }
