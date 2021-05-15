@@ -175,6 +175,7 @@ ggsave("Visualizations/perimeter.png",
        plot = perimeter,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
+tumors_reordered <- tumors[, c(1, 2, 5, 6, 7, 3, 8, 4)]
 file_name <- paste0(getwd(), "/Resources/data.csv")
-write.csv(tumors, file_name)
+write.csv(tumors_reordered, file_name)
 
