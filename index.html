@@ -14,40 +14,39 @@
 </head>
 
 <body>
-
-  <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-black bg-black">
-        <a class="navbar-brand" href="index.html">TUMORS: SHAPES AND SIZES</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" id="current-tab" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PLOTS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="area.html">Area</a>
-                        <a class="dropdown-item" href="compactness.html">Compactness</a>
-                        <a class="dropdown-item" href="concavity.html">Concavity</a>
-                        <a class="dropdown-item" href="radius.html">Radius</a>
-                        <a class="dropdown-item" href="symmetry.html">Symmetry</a>
-                        <a class="dropdown-item" href="texture.html">Texture</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">COMPARISON</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html">DATA</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <a class="navbar-brand" href="index.html">TUMORS: SHAPES AND SIZES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="current-tab" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PLOTS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="area.html">Area</a>
+                            <a class="dropdown-item" href="compactness.html">Compactness</a>
+                            <a class="dropdown-item" href="concavity.html">Concavity</a>
+                            <a class="dropdown-item" href="radius.html">Radius</a>
+                            <a class="dropdown-item" href="symmetry.html">Symmetry</a>
+                            <a class="dropdown-item" href="texture.html">Texture</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">COMPARISON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">DATA</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
     <div class="container">
         <div class="row-cols-1">
@@ -63,13 +62,14 @@
                 <img src="Visualizations/area.png" class="vizualization rounded float-left" alt="Area Plot">
             </br>
                 <p>The purpose of this project was to analyze whether the diagnosis of tumors was related to its size or shape. To accomplish this analysis, 
-                    two datasets from <a id="in-body-link" target="_blank" href="https://www.kaggle.com/alexisbcook/data-for-datavis">Kaggle.com</a> were used - one representing <id="b">benign</id> 
-                    tumors and the other representing <id="m">malignant</id> tumors.</p>
+                    two datasets from <a id="in-body-link" target="_blank" href="https://www.kaggle.com/alexisbcook/data-for-datavis">Kaggle.com</a> were combined - one 
+                    representing <span style="color:#2B92C7;font-weight:bold">benign</span> tumors and the other representing 
+                    <span style="color:#C54363;font-weight:bold">malignant</span> tumors.</p>
                 </br>
                 <p> R was used to build a series of density plots to showcase the relationships between diagnosis and different aspects of shape and size of tumors. 
-                    Relationships analyzed included: 
+                    Relationships analyzed include: 
                     </br><em>&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Area &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Diagnosis vs. Radius
-                    </br>&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Compactness&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Symmetry
+                    </br>&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Compactness&nbsp;&nbsp;- Diagnosis vs. Symmetry
                     </br>&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Concavity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Texture</em></p>
                 </br>
                 </br>
@@ -77,10 +77,17 @@
                 </br>
             </div>
         </div>
-    </nav>
+    </div>
 </div>
-<footer><p id=p2>Moriah Taylor | <a id="in-footer-link" target="_blank" href="https://github.com/moriahtaylor1">GitHub:</a> moriahtaylor1 | 
-    <a id="in-footer-link" target="_blank" href=https://twitter.com/moriah_taylor58>Twitter:</a> moriah_taylor58 | 
-    <a id="in-footer-link" target="_blank" href=https://www.twitch.tv/moriah_streamr>Twitch:</a> moriah_StreamR &nbsp;&nbsp;&nbsp;&nbsp;</p></footer>
+    <h3 style="color:#999">&nbsp;&nbsp;VISUALIZATIONS</h3>
+    <hr>
+    <div class="container" id="plots-container">
+        <a id="other-link" href="area.html"><h4>Area</h4><img id="img-full" src="Visualizations/area.png" alt="Area Plot"></a>
+        <a id="other-link" href="compactness.html"><h4>Compactness</h4><img id="img-full" src="Visualizations/compactness.png" alt="Compactness Plot"></a>
+        <a id="other-link" href="concavity.html"><h4>Concavity</h4><img id="img-full" src="Visualizations/concavity.png" alt="Concavity Plot"></a>
+        <a id="other-link" href="radius.html"><h4>Radius</h4><img id="img-full" src="Visualizations/radius.png" alt="Radius Plot"></a>
+        <a id="other-link" href="symmetry.html"><h4>Symmetry</h4><img id="img-full" src="Visualizations/symmetry.png" alt="Symmetry Plot"></a>
+        <a id="other-link" href="texture.html"><h4>Texture</h4><img id="img-full" src="Visualizations/texture.png" alt="Texture Plot"></a>
+    </div>
 </body>
 </html>
