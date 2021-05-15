@@ -29,10 +29,6 @@ for (i in 1:nrow(tumors)){
     tumors[i,2] <- "Malignant"
   }
 }
-#save plot
-ggsave("Assets/images/texture.png",
-       plot = texture,
-       device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 
 font_add(family = "regular", "Resources/Roboto-Regular.ttf")
@@ -140,44 +136,46 @@ perimeter <- ggplot(tumors, aes(x=Perimeter)) + geom_density(aes(fill=Diagnosis,
 ##SAVE PLOTS
 
 #TEXTURE
-ggsave("Assets/images/texture.png",
+ggsave("Visualizations/texture.png",
        plot = texture,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 #COMPACTNESS
-ggsave("Assets/images/compactness.png",
+ggsave("Visualizations/compactness.png",
        plot = compactness,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 #RADIUS
-ggsave("Assets/images/radius.png",
+ggsave("Visualizations/radius.png",
        plot = radius,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 
 #AREA
-ggsave("Assets/images/area.png",
+ggsave("Visualizations/area.png",
        plot = area,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 #SMOOTHNESS
-ggsave("Assets/images/smoothness.png",
+ggsave("Visualizations/smoothness.png",
        plot = smoothness,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 #CONCAVITY
-ggsave("Assets/images/concavity.png",
+ggsave("Visualizations/concavity.png",
        plot = concavity,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 #SYMMETRY
-ggsave("Assets/images/symmetry.png",
+ggsave("Visualizations/symmetry.png",
        plot = symmetry,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
 #PERIMETER
-ggsave("Assets/images/perimeter.png",
+ggsave("Visualizations/perimeter.png",
        plot = perimeter,
        device = agg_png(width = 5, height = 3, units = "in", res = 300))
 
+file_name <- paste0(getwd(), "/Resources/data.csv")
+write.csv(tumors, file_name)
 
