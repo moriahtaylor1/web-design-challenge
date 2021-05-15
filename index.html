@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-black bg-black">
         <a class="navbar-brand" href="index.html">TUMORS: SHAPES AND SIZES</a>
@@ -23,30 +24,63 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" id="current-tab" href="#">HOME</a>
+                    <a class="nav-link" id="current-tab" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PLOTS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Area</a>
-                        <a class="dropdown-item" href="#">Compactness</a>
-                        <a class="dropdown-item" href="#">Concavity</a>
-                        <a class="dropdown-item" href="#">Radius</a>
-                        <a class="dropdown-item" href="#">Symmetry</a>
-                        <a class="dropdown-item" href="#">Texture</a>
+                        <a class="dropdown-item" href="area.html">Area</a>
+                        <a class="dropdown-item" href="compactness.html">Compactness</a>
+                        <a class="dropdown-item" href="concavity.html">Concavity</a>
+                        <a class="dropdown-item" href="radius.html">Radius</a>
+                        <a class="dropdown-item" href="symmetry.html">Symmetry</a>
+                        <a class="dropdown-item" href="texture.html">Texture</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COMPARISON</a>
+                    <a class="nav-link" href="comparison.html">COMPARISON</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">DATA</a>
+                    <a class="nav-link" href="data.html">DATA</a>
                 </li>
             </ul>
         </div>
     </nav>
+    </div>
+    <div class="container">
+        <div class="row-cols-1">
+        </br>
+        </div>
+        <div class="row-cols-1">
+        </br>
+        </div>
+        <div class="row-cols-1">
+            <div class="col-12">
+                <h3 style="color:#2D9FDA">SUMMARY: TUMOR DIAGNOSIS VS. X</h3>
+                <hr>
+                <img src="Visualizations/area.png" class="vizualization rounded float-left" alt="Area Plot">
+            </br>
+                <p>The purpose of this project was to analyze whether the diagnosis of tumors was related to its size or shape. To accomplish this analysis, 
+                    two datasets from <a id="in-body-link" target="_blank" href="https://www.kaggle.com/alexisbcook/data-for-datavis">Kaggle.com</a> were used - one representing <id="b">benign</id> 
+                    tumors and the other representing <id="m">malignant</id> tumors.</p>
+                </br>
+                <p> R was used to build a series of density plots to showcase the relationships between diagnosis and different aspects of shape and size of tumors. 
+                    Relationships analyzed included: 
+                    </br><em>&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Area &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Diagnosis vs. Radius
+                    </br>&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Compactness&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Symmetry
+                    </br>&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Concavity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnosis vs. Texture</em></p>
+                </br>
+                </br>
+                </br>
+                </br>
+            </div>
+        </div>
+    </nav>
 </div>
+<footer><p id=p2>Moriah Taylor | <a id="in-footer-link" target="_blank" href="https://github.com/moriahtaylor1">GitHub:</a> moriahtaylor1 | 
+    <a id="in-footer-link" target="_blank" href=https://twitter.com/moriah_taylor58>Twitter:</a> moriah_taylor58 | 
+    <a id="in-footer-link" target="_blank" href=https://www.twitch.tv/moriah_streamr>Twitch:</a> moriah_StreamR &nbsp;&nbsp;&nbsp;&nbsp;</p></footer>
 </body>
 </html>
