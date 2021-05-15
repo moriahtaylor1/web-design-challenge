@@ -8,46 +8,88 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Comparison</title>
     <script src=“https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js” integrity=“sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin=“anonymous”></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-black bg-black">
-        <a class="navbar-brand" href="index.html">TUMORS: SHAPES AND SIZES</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PLOTS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="area.html">Area</a>
-                        <a class="dropdown-item" href="compactness.html">Compactness</a>
-                        <a class="dropdown-item" href="concavity.html">Concavity</a>
-                        <a class="dropdown-item" href="radius.html">Radius</a>
-                        <a class="dropdown-item" href="symmetry.html">Symmetry</a>
-                        <a class="dropdown-item" href="texture.html">Texture</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="current-tab" href="comparison.html">COMPARISON</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html">DATA</a>
-                </li>
-            </ul>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <a class="navbar-brand" href="index.html">TUMORS: SHAPES AND SIZES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PLOTS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="area.html">Area</a>
+                            <a class="dropdown-item" href="compactness.html">Compactness</a>
+                            <a class="dropdown-item" href="concavity.html">Concavity</a>
+                            <a class="dropdown-item" href="radius.html">Radius</a>
+                            <a class="dropdown-item" href="symmetry.html">Symmetry</a>
+                            <a class="dropdown-item" href="texture.html">Texture</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="current-tab" href="comparison.html">COMPARISON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">DATA</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row-cols-1">
+    </br>
+    </div>
+    <div class="row-cols-1">
+    </br>
+    </div>
+        <h3 style="color:#2D9FDA">&nbsp;&nbsp;COMPARING ALL PLOTS</h3>
+    <hr>
+    </br>
+    <div class="container" id="plots-container">
+        <img id="img-full" src="Visualizations/area.png" alt="Area Plot">
+        <img id="img-full" src="Visualizations/compactness.png" alt="Compactness Plot">
+        <img id="img-full" src="Visualizations/concavity.png" alt="Concavity Plot">
+        <img id="img-full" src="Visualizations/radius.png" alt="Radius Plot">
+        <img id="img-full" src="Visualizations/symmetry.png" alt="Symmetry Plot">
+        <img id="img-full" src="Visualizations/texture.png" alt="Texture Plot">
+    </div>
+    <div class="container">
+        <div class="row-cols-1">
+        </br>
         </div>
-        
-    </nav>
-</div>
+        <div class="row-cols-1">
+            <div class="col-12">
+            <p>Each of these visualizations show how different characteristics of shape and size relate to the diagnosis of tumors as either <span style="color:#2B92C7;font-weight:bold">benign</span> 
+            or <span style="color:#C54363;font-weight:bold">malignant</span>.</p>
+            </br>
+            <p>The area, compactness, concavity, and radius of malignant tumors appears to be significantly higher than those of benign tumors. The averages, represented by the dashed lines, 
+                are far apart in the plots. There is still some overlap between the distributions of the groups in each of these categories, so that indicates that within some intervals, it is possible 
+                for a tumor to be either benign or malignant.
+            </p>
+            </br>
+            <p>Symmetry and texture, on the other hand, do not seem to be inherently tied to a tumor's diagnosis. The distributions for each group for both of these characteristics have considerable 
+                overlap and their means are comparable. This indicates that symmetry and texture may not be different between benign and malignant tumors.
+            </p>
+            </br>
+            <p> <em><span style="color:#555;text-align:right;">****The R package 'ggplot2' was used to build this series of density plots</span></em> </p>
+            </br>
+            </br>
+            </br>
+            </br>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
