@@ -16,10 +16,9 @@ cancer_m <- read.csv(m_path)
 #merge data
 tumors <- rbind(cancer_b, cancer_m)
 #subset data 
-tumors <- tumors[,1:12]
+tumors <- tumors[,c(1:4, 6, 8:9, 11)]
 #rename columns
-names(tumors) <- c("id", "Diagnosis", "Radius", "Texture", "Perimeter", "Area", "Smoothness", "Compactness", "Concavity",
-                   "Concave_Points", "Symmetry", "Fractal_Dimension")
+names(tumors) <- c("id", "Diagnosis", "Radius", "Texture", "Area", "Compactness", "Concavity", "Symmetry")
 #change diagnosis to full word
 for (i in 1:nrow(tumors)){
   if (tumors[i,2]=="B"){
